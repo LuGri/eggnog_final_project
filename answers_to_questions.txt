@@ -1,0 +1,36 @@
+Which genes are universally required for an organism to survive? Being
+more precise: Which genes (OGs) occur in at least 99% of all genomes in
+the eggNOG5 database in each domain of life, respectively? (The results
+should be around 100-300.)
+How many such genes did you identify in each domain?
+
+- 123 cogs for bacteria
+- 175 cogs for archaea
+- 273 cogs for eurkaryota
+- results obtained with "wc -l filename" and substracting 1 because
+of the header line
+
+2. Which common bacterial genes occur almost exclusively as single-copy
+genes? Being more precise: Which OGs occur in at least 50% of all bacterial
+genomes, and in at least 99% thereof as single-copy?
+How many of these OGs were also identified as universal bacterial OGs?
+
+- 40 cogs with occurence 99% and 99% as single copy
+- result obtained with "wc -l cogs_bacteria_o99_u99.txt" and
+substracting 1
+
+3. Identify all OGs that occur as single-copy in at least 97% of all Archaea.
+It would be interesting to know if there are archaeal genomes which
+substantially deviate from this “default” archaeal gene set. Are
+there Archaea which lack 4 or more of these universal OGs? Which
+organism (scientific name) lacks most? What is its
+preferred growing temperature/environment? 
+
+- Yes, there are 6 Archaea which lack 4 or more of these 121 important
+OGs. The one which lacked the most has the Taxid 70601 (7 missing).
+- Taxid 70601 is Pyrococcus horikoshii OT3
+(https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=70601) 
+- Preferred environment: Anaerobic, temperature between 85°C and 105°C,
+optimally at 98°C
+(Kawarabayasi et al., 1998; doi 10.1093/dnares/5.2.55)
+
